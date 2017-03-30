@@ -9,8 +9,8 @@ body {
 
 .container {
   padding: 10px 20px 10px 20px;
-  border: solid #EEE;
-  border-width: 1px;
+  border: solid #DDD;
+  border-width: 2px;
   border-radius: 5px;
   display: inline-block;
 }
