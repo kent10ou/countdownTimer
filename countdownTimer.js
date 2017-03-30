@@ -1,4 +1,3 @@
-var endDate = 'March 31 2017';
 
 function timeRemaining (endTime) {
   var timeLeft = Date.parse(endTime) - Date.parse(new Date());
@@ -16,3 +15,28 @@ function timeRemaining (endTime) {
     'days': days
   }
 }
+
+function initializeClock(endtime) {
+
+  function updateTimer() {
+    var time = timeRemaining(endtime);
+
+    $('.days').html(time.days);
+    $('.hours').html(('0' + time.hours).slice(-2));
+    $('.minutes').html(('0' + time.minutes).slice(-2));
+    $('.seconds').html(('0' + time.seconds).slice(-2));
+
+    // clearInterval when time expires
+    if (time.timeLeft <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateTimer();
+  // refresh countdown timer
+  var timeinterval = setInterval(updateTimer, 1000);
+}
+
+var endDate = 'March 31 2017';
+
+initializeClock(endDate);

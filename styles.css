@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+}
+
+#timer {
+  display: inline-block;
+  text-align: center;
+}
+
+.container {
+  padding: 10px 20px 10px 20px;
+  border: solid #EEE;
+  border-width: 1px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+span {
+  padding: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 24pt;
+  font-family: Tahoma;
+}
+
+.text {
+  color: #BBB;
+  font-size: 14pt;
+  font-family: Tahoma;
+}
